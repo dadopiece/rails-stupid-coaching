@@ -1,0 +1,20 @@
+<%# <div>
+<%=params%>
+<%# </div> %>
+<div class="alert alert-primary">
+You asked :
+<%=params["answer"]%>
+</div>
+
+<div class="alert alert-primary">
+  <div class="row gx-5">
+    <div>
+    Coach :
+    <%=@answer%>
+    <% ask_path = "http://127.0.0.1:3000/ask" %>
+    </div>
+
+  </div>
+</div>
+
+    <%= link_to "ask another question", ask_path %>
